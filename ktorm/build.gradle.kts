@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    `application`
+    application
     kotlin("jvm")
 }
 
@@ -14,6 +14,7 @@ java {
 dependencies {
     implementation(kotlin("reflect"))
     implementation("org.ktorm:ktorm-core:3.3.0")
+    runtimeOnly("ch.qos.logback:logback-classic:1.2.3")
 }
 
 tasks.withType<KotlinCompile>() {

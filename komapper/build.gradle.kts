@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     idea
-    `application`
+    application
     kotlin("jvm")
     id("com.google.devtools.ksp") version "1.5.0-1.0.0-alpha09"
 }

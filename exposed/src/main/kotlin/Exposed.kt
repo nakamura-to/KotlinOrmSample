@@ -46,8 +46,6 @@ fun main(args: Array<String>) {
 
     // DSL
     transaction(database) {
-        // print sql to std-out
-        addLogger(StdOutSqlLogger)
         // select
         ExposedEmployees
             .slice(ExposedEmployees.name)
