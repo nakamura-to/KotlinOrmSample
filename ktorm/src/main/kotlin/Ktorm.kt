@@ -47,24 +47,24 @@ fun main() {
         database
             .from(KtormEmployees)
             .select(KtormEmployees.name)
-            .where { (KtormEmployees.departmentId notEq 4) and (KtormEmployees.name like "%郎%") }
+            .where { (KtormEmployees.departmentId notEq 4) and (KtormEmployees.name like "%郎%") }.forEach {  }
         // aggregation
         database
             .from(KtormEmployees)
             .select(KtormEmployees.departmentId, avg(KtormEmployees.salary))
             .groupBy(KtormEmployees.departmentId)
-            .having { avg(KtormEmployees.salary) greater 100.0 }
+            .having { avg(KtormEmployees.salary) greater 100.0 }.forEach {  }
         // union
         database
             .from(KtormEmployees)
             .select(KtormEmployees.id)
-            .unionAll(database.from(KtormDepartments).select(KtormDepartments.id))
+            .unionAll(database.from(KtormDepartments).select(KtormDepartments.id)).forEach {  }
         // join
         database
             .from(KtormEmployees)
             .leftJoin(KtormDepartments, on = KtormEmployees.departmentId eq KtormDepartments.id)
             .select(KtormEmployees.name, KtormDepartments.name)
-            .orderBy(KtormEmployees.id.asc())
+            .orderBy(KtormEmployees.id.asc()).forEach {  }
     }
 
     database.useTransaction {
