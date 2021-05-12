@@ -18,3 +18,9 @@ port番号がdocker-compose.yamlとソースコードにベタ書きなので適
 **動かし方**
 
 あとはそれぞれ `Exposed.kt` と `Ktorm.kt` のmainメソッドを実行してください。
+
+もしくは、下記のコマンドを実行してください。
+
+```sh
+$ ./gradlew run
+```

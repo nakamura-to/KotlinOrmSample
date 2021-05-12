@@ -6,4 +6,6 @@ pluginManagement {
 }
 
 rootProject.name = "KotlinOrmSample"
-
+include("exposed")
+include("komapper")
+include("ktorm")
