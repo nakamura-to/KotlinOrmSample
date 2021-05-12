@@ -95,3 +95,21 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 
+### https://raw.github.com/github/gitignore/d34e91530084f6b11b4b90621f9a4f2a895f3f3c/Gradle.gitignore
+
+.gradle
+/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+
