@@ -1,7 +1,3 @@
-@file:Suppress("PackageDirectoryMismatch")
-
-package komapper
-
 import org.komapper.annotation.KmAutoIncrement
 import org.komapper.annotation.KmEntity
 import org.komapper.annotation.KmId

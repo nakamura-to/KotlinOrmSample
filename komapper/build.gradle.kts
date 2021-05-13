@@ -42,5 +42,5 @@ idea.module {
 }
 
 application {
-    mainClass.set("komapper.KomapperKt")
+    mainClass.set("KomapperKt")
 }
